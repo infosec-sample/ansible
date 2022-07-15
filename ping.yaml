@@ -1,0 +1,11 @@
+---
+  - name: pinglinuxdmz
+    hosts: linux
+    tasks:
+      - name: Ping Linux Hosts
+        ping:
+  - name: pingwindmz
+    hosts: windows
+    tasks:
+      - name: Ping Windows hosts
+        win_ping:
